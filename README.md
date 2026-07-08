@@ -66,11 +66,18 @@ Test MCC around 0.60 with a tight confidence interval. When the labels are shuff
 
 
 ## Repo structure
+
+​```
 survey-item-importance/
-├── notebook/pipeline.ipynb
-├── data/codebook.txt
-├── figures/
-│   ├── cv_hyperparameter_tuning.png
-│   ├── feature_importance_boxplot.png
-│   └── top_features_barplot.png
-└── README.md
+├── README.md
+├── notebook/
+│   └── pipeline.ipynb
+├── data/
+│   └── codebook.txt
+└── figures/
+    ├── cv_hyperparameter_tuning.png
+    ├── feature_importance_boxplot.png
+    └── top_features_barplot.png
+​```
+
+
