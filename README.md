@@ -65,5 +65,12 @@ Test MCC around 0.60 with a tight confidence interval. When the labels are shuff
 - **Two sanity checks, not one.** Model swap catches classifier-specific quirks. Label shuffle catches leakage. You need both.
 
 
-
 ## Repo structure
+survey-item-importance/
+├── notebook/pipeline.ipynb
+├── data/codebook.txt
+├── figures/
+│   ├── cv_hyperparameter_tuning.png
+│   ├── feature_importance_boxplot.png
+│   └── top_features_barplot.png
+└── README.md
