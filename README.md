@@ -68,11 +68,6 @@ A few choices worth calling out for a technical reviewer:
 - **Two diagnostic steps rather than one.** Swapping the classifier catches model-specific artifacts. Shuffling labels catches leakage and data pipeline bugs. Neither alone would catch both failure modes.
 - **Regularization sweep on log scale.** Ten orders of magnitude across `C` is more than the eventual answer needs, but it makes the shape of the curve visible and the choice defensible. Sweeping only a narrow band around a guessed optimum hides whether the model is actually plateauing or still climbing.
 
-## Responsible use
-
-The target variable in this demo is self-reported binary gender, drawn from a public psychometric dataset where respondents opted in and provided the labels themselves. It's used here as a stand-in for a generic categorical target because it's clean, labeled, and publicly available.
-
-Predicting demographic attributes from behavioral data in an applied setting is a different question, one that carries fairness, consent, and regulatory implications (GDPR Art. 9, EU AI Act, sector-specific rules) and shouldn't be deployed without a specific lawful basis and a documented impact assessment. The value of this notebook is the shape of the pipeline, not the deployment of this particular classifier.
 
 ## Repo structure
 
