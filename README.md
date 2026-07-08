@@ -64,10 +64,6 @@ Test MCC around 0.60 with a tight confidence interval. When the labels are shuff
 - **Bootstrap confidence intervals.** A single number is fragile. A range is defensible.
 - **Two sanity checks, not one.** Model swap catches classifier-specific quirks. Label shuffle catches leakage. You need both.
 
-## Responsible use
 
-The target here is self-reported gender, chosen because the dataset is public and cleanly labeled. It's used as a stand-in for the general problem of predicting a category from Likert-scale answers.
-
-Predicting demographic attributes in production is a different problem, with GDPR, EU AI Act, and fairness implications. The value of this repo is the pipeline shape, not this specific classifier.
 
 ## Repo structure
