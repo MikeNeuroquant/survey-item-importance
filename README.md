@@ -86,11 +86,6 @@ Test accuracy is 80%. Recall is higher on Female (87% vs 73% for Male), precisio
 
 **Label-shuffle sanity check.** When test labels are randomly shuffled before scoring, test MCC drops from 0.600 to 0.013, essentially chance. This confirms the model is using the actual signal in the features and isn't picking up a leak from the pipeline.
 
-## Responsible use
-
-The target here is self-reported gender, chosen because the dataset is public and cleanly labeled. It's used as a stand-in for the general problem of predicting a category from Likert-scale answers.
-
-Predicting demographic attributes in production is a different problem, with GDPR, EU AI Act, and fairness implications. The value of this repo is the pipeline shape, not this specific classifier.
 
 ## Repo structure
 
